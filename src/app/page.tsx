@@ -1,5 +1,5 @@
 import { ImagesCarousel } from "@/components/carousel";
-import { ProductCarousel } from "@/components/product-carousel";
+import { ProductsCarousel } from "@/components/products-carousel";
 import { Button } from "@/components/ui/button";
 import { Separator } from "@/components/ui/separator";
 import { ArrowDownIcon, ArrowTopRightIcon } from "@radix-ui/react-icons";
@@ -18,13 +18,13 @@ export default function Home() {
         </p>
         <ArrowDownIcon className="absolute bottom-4 text-white w-8 h-8 animate-bounce"/>
       </section> 
-      <ProductCarousel />
-      <article className="w-full h-full pt-20 flex flex-col items-center justify-center px-32 pb-10">
+      <ProductsCarousel />
+      <article id="sobre-nos" className="w-full h-full pt-20 flex flex-col items-center justify-center px-32 pb-10">
         <section className="flex justify-between items-center w-full">
           <div className="flex flex-col items-start justify-center w-full max-w-2xl gap-6">
             <div className="flex items-center gap-3">
-              <div className="w-20 bg-green-800 h-0.5 rounded-full"/>
-              <span className="text-green-800 uppercase font-medium">Quem nós somos</span>
+              <div className="w-20 bg-[#222C55] h-0.5 rounded-full"/>
+              <span className="text-[#222C55] uppercase font-medium">Quem nós somos</span>
             </div>
               <h2 className="text-4xl font-bold text-neutral-950">
                 Discover Sustainable Luxury Living with EcoHaven Realty.
@@ -35,12 +35,12 @@ export default function Home() {
                 including energy-efficient homes, homes built with eco-friendly materials, 
                 and homes equipped with sustainable technologies such as solar panels.
               </p>
-              <Button className="rounded-full bg-green-800 hover:bg-green-700 transition-colors py-6 px-6">Nossa empresa <ArrowTopRightIcon className=" text-white" width={22} height={22}/></Button>
+              <Button className="rounded-full bg-[#FFF117] hover:bg-[#fff456] text-black shadow-xl transition-colors py-6 px-6">Nossa empresa <ArrowTopRightIcon className=" text-black" width={22} height={22}/></Button>
           </div>
           <Image alt="imagem da empresa" src="/img4.jpg" width={0} height={0} className="object-cover w-full rounded-3xl max-w-3xl" sizes="100vw"/>
         </section>
 
-        {/* <Separator className="bg-green-800 w-full mt-8" /> */}
+        {/* <Separator className="bg-[#222C55] w-full mt-8" /> */}
 
       </article>
         <section className="flex justify-between items-center w-full bg-white px-32 py-24">
@@ -55,8 +55,8 @@ export default function Home() {
                 and sustainable living.
               </p>
               <div className="flex justify-center items-center w-full gap-3">
-                <input className="rounded-full w-[36rem] h-12 border-green-800 border-2 pl-4" type="text" placeholder="Digite aqui sua mensagem"/>
-                <Button className="rounded-full bg-green-800 hover:bg-green-700 transition-colors h-12 w-32">Enviar</Button>
+                <input className="rounded-full w-[36rem] h-12 border-[#222C55] border-2 pl-4" type="text" placeholder="Digite aqui sua mensagem"/>
+                <Button className="rounded-full bg-[#FFF117] hover:bg-[#fff456] shadow-xl text-black transition-colors h-12 w-32">Enviar</Button>
               </div>
             </div>
           </div>

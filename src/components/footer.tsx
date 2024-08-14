@@ -5,7 +5,7 @@ import Link from "next/link";
 
 export function Footer(){
     return (
-        <footer className="flex flex-col items-center w-full gap-12 pb-8 pt-32 bg-green-800">
+        <footer className="flex flex-col items-center w-full gap-12 pb-8 pt-32 bg-[#222C55]">
             <div className="flex w-full justify-evenly items-center">
                 <div className="flex flex-col items-start justify-center">
                     <h2>logo</h2>
@@ -30,7 +30,7 @@ export function Footer(){
                     <Link href="#" className="text-primary-foreground text-xs md:text-base hover:text-valorant transition-all">exemplo</Link>
                 </div>
             </div>
-            <span className="text-sm font-medium text-white">©2024 EloBlitz. All rights reserved</span>
+            <span className="text-sm font-medium text-white">©2024 WL Madeiras. All rights reserved</span>
         </footer>
     )
 }

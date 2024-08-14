@@ -23,9 +23,9 @@ const images: String[] = [
     "/img10.jpg",
 ]
 
-export function ProductCarousel() {
+export function ProductsCarousel() {
   return (
-    <Carousel className="w-full max-w-xl"
+    <Carousel className="w-full"
         opts={{
             loop: true,
         }}
@@ -37,13 +37,11 @@ export function ProductCarousel() {
     >
       <CarouselContent>
         {images.map((value, index) => (
-          <CarouselItem key={index} className="flex items-center justify-center ">
-            <Image alt="background image" src={value as any} width={0} height={0} className="h-[20rem] w-full object-cover brightness-[85%] rounded-xl" sizes="100vw"/>
+          <CarouselItem key={index} className="flex items-center justify-center basis-1/4">
+            <Image alt="background image" src={value as any} width={0} height={0} className="h-[16rem] w-full object-cover brightness-[85%]" sizes="100vw"/>
           </CarouselItem>
         ))}
       </CarouselContent>
-      <CarouselPrevious />
-      <CarouselNext />
     </Carousel>
   )
 }
