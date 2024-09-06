@@ -15,7 +15,7 @@ import Link from "next/link"
     return (
       <DropdownMenu>
         <DropdownMenuTrigger asChild>
-          <Button variant="link" className="text-neutral-50 text-sm uppercase hover:text-neutral-200 gap-2">Produtos <ChevronDownIcon className="w-4 h-4"/></Button>
+          <Button variant="link" className="text-[#222C55] hover:text-neutral-900 text-sm uppercase gap-2">Produtos <ChevronDownIcon className="w-4 h-4"/></Button>
         </DropdownMenuTrigger>
         <DropdownMenuContent className="w-56 bg-[#222C55] text-white border-neutral-800">
           <DropdownMenuLabel>Nossos Produtos</DropdownMenuLabel>
